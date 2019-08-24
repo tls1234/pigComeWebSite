@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100px;
+}
+
+
+/* //导航 */
+
+.nav {
+    height: 0.56rem;
+    width: 10.1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 0.35rem;
+}
+
+.nav ul {
+    padding-left: 0.6rem;
+    width: 7.11rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navImg {
+    width: 1.7rem;
+    height: 100%;
+    margin-left: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li {
+    font-size: 0.16rem;
+    list-style: none;
+    float: left;
+    /* width: 1rem; */
+    color: rgba(51, 51, 51, 1);
+    text-align: center;
+    height: 0.56rem;
+    position: relative;
+    clear: both;
+    /* line-height: 0.56rem; */
+    cursor: pointer;
+    display: flex;
+    font-size: 0.14rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.liSpan {
+    font-size: 0.1rem;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    /* color: rgba(102, 102, 102, 1); */
+}
+
+ul li img {
+    width: 0.1rem;
+    height: 0.13rem;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: calc(100%/2 - 0.05rem);
+    /* left: 50%; */
+}
+
+.liImg {
+    display: block;
+}
+
+.nav .menu {
+    width: 0.40rem;
+    height: 0.30rem;
+    position: absolute;
+    line-height: 0.3rem;
+    text-align: center;
+    border-radius: 0.06rem;
+    color: black;
+    cursor: pointer;
+    right: 0.4rem;
+    top: calc((0.56rem - 0.4rem) / 2);
+    display: none;
+    -webkit-user-select: none;
+}
+
+.nav ul li:hover,
+.nav ul li .liSpan:hover {
+    color: rgba(0, 222, 161, 1);
+}
+
+
+/* .nav ul li:hover .nav ul li>img,
+.nav ul li .liSpan:hover .nav ul li>img {
+    display: block;
+} */
+
+.liColor {
+    color: rgba(0, 222, 161, 1);
+}
+
+.sjoff {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sj-leftImg {
+    position: absolute;
+    left: 0;
+    z-index: -300;
+}
+
+.sj-rightImg {
+    width: 8.47rem;
+    height: 6.01rem;
+    position: absolute;
+    right: 0;
+    z-index: -300;
+}
+
+.content {
+    width: 17.10rem;
+    margin-top: 0.69rem;
+    margin-left: 1.05rem;
+    /* border: 1px red solid; */
+    position: relative;
+    /* overflow: hidden; */
+    /* background: rgba(251, 255, 255, 1); */
+    box-shadow: 0px 1px 15px 0px rgba(214, 222, 220, 0.77);
+}
+
+.content-img {
+    float: right;
+    margin-top: 0.94rem;
+}
+
+.about {
+    width: 9.03rem;
+    overflow: hidden;
+    position: relative;
+    background: rgba(251, 255, 255, 1);
+}
+
+.about-headImg {
+    /* margin: 0 auto; */
+    margin-bottom: 0.25rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.about-headText {
+    margin-bottom: 0.26rem;
+}
+
+
+/* .about-headImg>img,
+.about-headText>img {
+    max-width: 100%;
+    height: auto;
+} */
+
+.about-Text {
+    margin: 0 auto;
+    font-size: 0.18rem;
+    font-family: MicrosoftYaHeiLight;
+    font-weight: 300;
+    color: rgba(68, 68, 68, 1);
+    line-height: 0.38rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 0.63rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-telPhone {
+    font-size: 0.18rem;
+    font-family: MicrosoftYaHeiLight;
+    font-weight: 300;
+    color: rgba(68, 68, 68, 1);
+    line-height: 0.23rem;
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.19rem;
+}
+
+.Text-img {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    z-index: -200;
+}
+
+.Text-img>img {
+    width: 100%;
+    height: auto;
+}
+
+.flexTel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexTel>span {
+    padding-left: 0.1rem;
+}
+
+.about-email {
+    padding-left: 0.47rem;
+}
+
+.sjEnter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(237, 251, 255, 1);
+}
+
+.sjEnter-header,
+.sjEnter-content,
+.dowmHead {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sjEnter-header {
+    margin-top: 0.48rem;
+    margin-bottom: 0.57rem;
+}
+
+.sjEnter-content {
+    margin-bottom: 0.44rem;
+}
+
+.dowmApp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dowmHead {
+    margin-top: 0.78rem;
+    margin-bottom: 0.58rem;
+    margin-left: 0.99rem;
+}
+
+.dowmApp-content {
+    width: 100%;
+    height: 5.75rem;
+    position: relative;
+    clear: both;
+}
+
+.dowmLeft {
+    width: 11.50rem;
+    height: 100%;
+    position: absolute;
+    left: -1.13rem;
+    /* z-index: -200; */
+    background-color: white;
+}
+
+.dowmLeft>img {
+    height: 100%;
+}
+
+.dowmRight {
+    width: 6.70rem;
+    height: 4.34rem;
+    position: absolute;
+    left: 9.5rem;
+    top: calc(100%/2 - 2.17rem)
+}
+
+.dowmRight>img {
+    height: 100%;
+}
+
+.hzImg {
+    width: 14.80rem;
+    height: 3.56rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hzImgChild {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ImgMB {
+    width: 3.22rem;
+    height: 1.58rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(251, 255, 255, 1);
+    box-shadow: 0px 1px 10px 0px rgba(214, 222, 220, 0.6);
+}
+
+.ImgMB>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* 媒体查询器 */
+
+@media (max-width:828px) {
+    /* 导航条 */
+    .nav .menu {
+        display: block;
+    }
+    .nav ul {
+        position: absolute;
+        top: 0.65rem;
+        padding-left: 0rem;
+        right: 0.1rem;
+        display: none;
+    }
+    .nav ul li {
+        float: none;
+        background-color: white;
+        border-radius: 0.04rem;
+        margin-bottom: 1px;
+    }
+    .nav ul li:hover {
+        background-color: rgba(0, 222, 161, 1);
+        opacity: 0.9;
+    }
+    /* .about-Text {
+        font-size: 0.28rem;
+        line-height: 0.28rem;
+    } */
+    .about-telPhone {
+        font-size: 0.28rem;
+        line-height: 0.32rem;
+    }
+    .about {
+        height: 7.1rem;
+    }
+    .iconImg {
+        width: 14px;
+        height: 10px;
+    }
+    .about-adress>.iconImg {
+        width: 10px;
+        height: 12.5px;
+    }
+}
